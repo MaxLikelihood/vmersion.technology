@@ -1,0 +1,20 @@
+ 1997  mkdir vmersion.technology
+ 1998  cd vmersion.technology/
+ 1999  git init
+ 2000  git remote add origin https://github.com/MaxLikelihood/vmersion.technology.git
+ 2001  git pull origin master
+ 2002  ls
+ 2003  git remote -v
+ 2004  git remote add live ssh://debashish@vmersion.technology:9011/var/repo/vmersion.technology.git
+ 2005  git remote -v
+ 2006  git diff
+ 2007  git add .
+ 2008  git push live master
+ 2009  git status
+ 2010  git commit
+ 2011  git push live master
+ 2012  git push origin master
+ 2013  git remote -v
+ 2014  git add .
+ 2015  git commit
+ 2016  history
