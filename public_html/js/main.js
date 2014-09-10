@@ -13,7 +13,7 @@ dp(document).ready(function() {
     //SUPER SLIDES
     dp('#home-slide').superslides({
         animation: 'fade', // You can choose either fade or slide
-        play: 2000
+        play: 2500
     });
 
     //ANIMAZE
