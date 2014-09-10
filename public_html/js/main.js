@@ -13,7 +13,7 @@ dp(document).ready(function() {
     //SUPER SLIDES
     dp('#home-slide').superslides({
         animation: 'fade', // You can choose either fade or slide
-        play: 6000
+        play: 2000
     });
 
     //ANIMAZE
@@ -102,7 +102,7 @@ dp(document).ready(function() {
                 }
             },
             marker: {
-                address: "Haltern am See, Weseler Str. 151", // PUT YOUR ADDRESS HERE
+                address: "845 Rue Sherbrooke Ouest, Montréal, QC H3A 0G4", // PUT YOUR ADDRESS HERE
                 options: {
                     icon: new google.maps.MarkerImage(
                         "http://cdn.webiconset.com/map-icons/images/pin6.png",
