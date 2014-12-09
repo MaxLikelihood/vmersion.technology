@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" type="text/css" href="asset/css/style.css">
+	<script src="asset/javascript/interactive.js"></script>
+</head>
+<body>
+	<!-- Prevent Right-Click Div -->
+	<div oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
+	<!-- Initialize Video -->
+	<video
+	 id="blender"
+	 class="video-js"
+	 preload="auto"
+	 width="360"
+	 height="640"
+	 poster="asset/image/blender_1080p.png">
+	 <source src="asset/video/blender.mp4" type='video/mp4' />
+	 <source src="asset/video/blender.webm" type='video/webm' />
+	 <source src="asset/video/blender.ogv" type='video/ogg' />
+	 <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+	</video>
+  <div style="display:none">
+	<button type="button" onclick="play()">Play</button>
+	<button type="button" onclick="interrupt()">Pause</button>
+	<button type="button" onclick="stop()">Stop</button>
+	<p id="annotation">Annotation</p>
+  </div>
+	</div>
+  <div style="display:none">
+	<!-- Interactive control buttons -->
+	<button type="button" onclick="start()">Start</button>
+	<button type="button" onclick="empty_addOrange()">Add Orange</button>
+	<button type="button" onclick="blend_Orange()">Blend Orange</button>
+	<button type="button" onclick="pour_Orange()">Pour Blended Orange</button>
+	<button type="button" onclick="show_Orange()">View Poured Glass of Blended Orange</button>
+  <button type="button" onclick="orange_addBanana()">Add Banana to Orange</button>
+  <button type="button" onclick="blend_OrangeBanana()">Blend Banana added to Orange</button>
+  <button type="button" onclick="pour_OrangeBanana()">Pour blended Banana added to Orange</button>
+  <button type="button" onclick="show_OrangeBanana()">View poured glass of blended Banana added to Orange</button>
+  <button type="button" onclick="empty_addBanana()">Add Banana</button>
+  <button type="button" onclick="blend_Banana()">Blend Banana</button>
+  <button type="button" onclick="pour_Banana()">Pour Blended Banana</button>
+  <button type="button" onclick="show_Banana()">View Poured Glass of Blended Banana</button>
+  <button type="button" onclick="banana_addOrange()">Add Orange to Banana</button>
+  <button type="button" onclick="blend_BananaOrange()">Blend Orange added to Banana</button> 
+  </div>
+  <!-- Interactive Menu -->
+  <div id = 'menu_Start' class = "dropdown-menu" aria-labelledby = "dropdownMenu" onclick="start()">
+    <div id = 'switch' style = "color:white; opacity:0.5;">
+        <i class="fa fa-gears fa-2x" ></i>Start
+    </div> 
+  </div>
+  <div id = 'menu_addFruit' class = "dropdown-menu" aria-labelledby = "dropdownMenu">
+    <div id = 'switch' style = "color:white; opacity:0.5;" onclick="empty_addBanana()">
+        <i class="fa fa-hand-o-left fa-2x" ></i>Add Banana
+    </div>
+    <br>
+    <div id = 'switch' style = "color:white; opacity:0.5;" onclick="empty_addOrange()">
+        <i class="fa fa-hand-o-left fa-2x" ></i>Add Orange
+    </div>
+  </div>
+  <div id = 'menu_addOrange' class = "dropdown-menu" aria-labelledby = "dropdownMenu">
+    <br><br><br>
+    <div id = 'switch' style = "color:white; opacity:0.5;" onclick="banana_addOrange()">
+        <i class="fa fa-hand-o-left fa-2x" ></i>Add Orange
+    </div>
+  </div>
+  <div id = 'menu_addBanana' class = "dropdown-menu" aria-labelledby = "dropdownMenu">
+    <div id = 'switch' style = "color:white; opacity:0.5;" onclick="orange_addBanana()">
+        <i class="fa fa-hand-o-left fa-2x" ></i>Add Banana
+    </div>
+  </div>
+  <div id = 'menu_blendOrange' class = "dropdown-menu" aria-labelledby = "dropdownMenu">
+    <div id = 'switch' style = "color:white; opacity:0.5;" onclick="blend_Orange()">
+        <i class="fa fa-gear fa-2x" ></i>Blend
+    </div>
+  </div>
+  <div id = 'menu_blendOrangeBanana' class = "dropdown-menu" aria-labelledby = "dropdownMenu">
+    <div id = 'switch' style = "color:white; opacity:0.5;" onclick="blend_OrangeBanana()">
+        <i class="fa fa-gear fa-2x" ></i>Blend
+    </div>
+  </div>
+  <div id = 'menu_blendBanana' class = "dropdown-menu" aria-labelledby = "dropdownMenu">
+    <div id = 'switch' style = "color:white; opacity:0.5;" onclick="blend_Banana()">
+        <i class="fa fa-gear fa-2x" ></i>Blend
+    </div>
+  </div>
+  <div id = 'menu_blendBananaOrange' class = "dropdown-menu" aria-labelledby = "dropdownMenu">
+    <div id = 'switch' style = "color:white; opacity:0.5;" onclick="blend_BananaOrange()">
+        <i class="fa fa-gear fa-2x" ></i>Blend
+    </div>
+  </div>
+  <div id = 'menu_pourOrange' class = "dropdown-menu" aria-labelledby = "dropdownMenu">
+    <div id = 'switch' style = "color:white; opacity:0.5;" onclick="pour_Orange()">
+        <i class="fa fa-glass fa-2x" ></i>Pour
+    </div>
+  </div>
+  <div id = 'menu_showOrange' class = "dropdown-menu" aria-labelledby = "dropdownMenu">
+    <div id = 'switch' style = "color:white; opacity:0.5;" onclick="show_Orange()">
+        <i class="fa fa-eye fa-2x" ></i>View
+    </div>
+  </div>
+  <div id = 'menu_pourOrangeBanana' class = "dropdown-menu" aria-labelledby = "dropdownMenu">
+    <div id = 'switch' style = "color:white; opacity:0.5;" onclick="pour_OrangeBanana()">
+        <i class="fa fa-glass fa-2x" ></i>Pour
+    </div>
+  </div>
+  <div id = 'menu_showOrangeBanana' class = "dropdown-menu" aria-labelledby = "dropdownMenu">
+    <div id = 'switch' style = "color:white; opacity:0.5;" onclick="show_OrangeBanana()">
+        <i class="fa fa-eye fa-2x" ></i>View
+    </div>
+  </div>
+  <div id = 'menu_pourBanana' class = "dropdown-menu" aria-labelledby = "dropdownMenu">
+    <div id = 'switch' style = "color:white; opacity:0.5;" onclick="pour_Banana()">
+        <i class="fa fa-glass fa-2x" ></i>Pour
+    </div>
+  </div>
+  <div id = 'menu_showBanana' class = "dropdown-menu" aria-labelledby = "dropdownMenu">
+    <div id = 'switch' style = "color:white; opacity:0.5;" onclick="show_Banana()">
+        <i class="fa fa-eye fa-2x" ></i>View
+    </div>
+  </div>
+  <div id = 'menu_reset' class = "dropdown-menu" aria-labelledby = "dropdownMenu">
+    <div id = 'switch' style = "color:white; opacity:0.5;" onclick="video_reset()">
+        <i class="fa fa-refresh fa-2x" ></i>Reset
+    </div>
+  </div>
+	<!-- Video.JS Includes -->
+	<link href="asset/video-js/video-js.css" rel="stylesheet">
+	<script src="asset/video-js/video.js"></script>
+  <!-- font-awesome Includes -->
+  <link href="asset/css/font-awesome-4.2.0/css/font-awesome.min.css" rel="stylesheet">
+</body>
+</html>

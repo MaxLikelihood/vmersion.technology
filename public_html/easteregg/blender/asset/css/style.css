@@ -1,0 +1,120 @@
+#menu_Start{
+	position: absolute; 
+	top: 75%; 
+	left: 20%; 
+	z-index: 4; 
+	cursor: pointer;
+	display: none;
+}
+#menu_addFruit{
+	position: absolute; 
+	top: 67%; 
+	left: 60%; 
+	z-index: 4; 
+	cursor: pointer;
+	display: none;
+}
+#menu_addOrange{
+	position: absolute; 
+	top: 66%; 
+	left: 60%; 
+	z-index: 4; 
+	cursor: pointer;
+	display: none;
+}
+#menu_addBanana{
+	position: absolute; 
+	top: 67%; 
+	left: 60%; 
+	z-index: 4; 
+	cursor: pointer;
+	display: none;
+}
+#menu_blendOrange{
+	position: absolute; 
+	top: 75%; 
+	left: 20%; 
+	z-index: 4; 
+	cursor: pointer;
+	display: none;
+}
+#menu_blendOrangeBanana{
+	position: absolute; 
+	top: 75%; 
+	left: 20%; 
+	z-index: 4; 
+	cursor: pointer;
+	display: none;
+}
+#menu_blendBanana{
+	position: absolute; 
+	top: 75%; 
+	left: 20%; 
+	z-index: 4; 
+	cursor: pointer;
+	display: none;
+}
+#menu_blendBananaOrange{
+	position: absolute; 
+	top: 75%; 
+	left: 20%; 
+	z-index: 4; 
+	cursor: pointer;
+	display: none;
+}
+#menu_pourOrange{
+	position: absolute; 
+	top: 75%; 
+	left: 25%; 
+	z-index: 4; 
+	cursor: pointer;
+	display: none;
+}
+#menu_showOrange{
+	position: absolute; 
+	top: 75%; 
+	left: 25%; 
+	z-index: 4; 
+	cursor: pointer;
+	display: none;
+}
+#menu_pourOrangeBanana{
+	position: absolute; 
+	top: 75%; 
+	left: 25%; 
+	z-index: 4; 
+	cursor: pointer;
+	display: none;
+}
+#menu_showOrangeBanana{
+	position: absolute; 
+	top: 75%; 
+	left: 25%; 
+	z-index: 4; 
+	cursor: pointer;
+	display: none;
+}
+#menu_pourBanana{
+	position: absolute; 
+	top: 75%; 
+	left: 25%; 
+	z-index: 4; 
+	cursor: pointer;
+	display: none;
+}
+#menu_showBanana{
+	position: absolute; 
+	top: 75%; 
+	left: 25%; 
+	z-index: 4; 
+	cursor: pointer;
+	display: none;
+}
+#menu_reset{
+	position: absolute; 
+	top: 40%; 
+	left: 35%; 
+	z-index: 4; 
+	cursor: pointer;
+	display: none;
+}
