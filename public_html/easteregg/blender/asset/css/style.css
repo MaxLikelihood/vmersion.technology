@@ -6,6 +6,13 @@
 	cursor: pointer;
 	display: none;
 }
+#menu_Start:hover{
+	transform:scale(1.2);
+	-ms-transform:scale(1.2); /* IE 9 */
+	-moz-transform:scale(1.2); /* Firefox */
+	-webkit-transform:scale(1.2); /* Safari and Chrome */
+	-o-transform:scale(1.2); /* Opera */
+}
 #menu_addFruit{
 	position: absolute; 
 	top: 67%; 
@@ -13,6 +20,13 @@
 	z-index: 4; 
 	cursor: pointer;
 	display: none;
+}
+#menu_addFruit:hover{
+	transform:scale(1.2);
+	-ms-transform:scale(1.2); /* IE 9 */
+	-moz-transform:scale(1.2); /* Firefox */
+	-webkit-transform:scale(1.2); /* Safari and Chrome */
+	-o-transform:scale(1.2); /* Opera */
 }
 #menu_addOrange{
 	position: absolute; 
@@ -22,6 +36,13 @@
 	cursor: pointer;
 	display: none;
 }
+#menu_addOrange:hover{
+	transform:scale(1.2);
+	-ms-transform:scale(1.2); /* IE 9 */
+	-moz-transform:scale(1.2); /* Firefox */
+	-webkit-transform:scale(1.2); /* Safari and Chrome */
+	-o-transform:scale(1.2); /* Opera */
+}
 #menu_addBanana{
 	position: absolute; 
 	top: 67%; 
@@ -29,6 +50,13 @@
 	z-index: 4; 
 	cursor: pointer;
 	display: none;
+}
+#menu_addBanana:hover{
+	transform:scale(1.2);
+	-ms-transform:scale(1.2); /* IE 9 */
+	-moz-transform:scale(1.2); /* Firefox */
+	-webkit-transform:scale(1.2); /* Safari and Chrome */
+	-o-transform:scale(1.2); /* Opera */
 }
 #menu_blendOrange{
 	position: absolute; 
@@ -38,6 +66,13 @@
 	cursor: pointer;
 	display: none;
 }
+#menu_blendOrange:hover{
+	transform:scale(1.2);
+	-ms-transform:scale(1.2); /* IE 9 */
+	-moz-transform:scale(1.2); /* Firefox */
+	-webkit-transform:scale(1.2); /* Safari and Chrome */
+	-o-transform:scale(1.2); /* Opera */
+}
 #menu_blendOrangeBanana{
 	position: absolute; 
 	top: 75%; 
@@ -45,6 +80,13 @@
 	z-index: 4; 
 	cursor: pointer;
 	display: none;
+}
+#menu_blendOrangeBanana:hover{
+	transform:scale(1.2);
+	-ms-transform:scale(1.2); /* IE 9 */
+	-moz-transform:scale(1.2); /* Firefox */
+	-webkit-transform:scale(1.2); /* Safari and Chrome */
+	-o-transform:scale(1.2); /* Opera */
 }
 #menu_blendBanana{
 	position: absolute; 
@@ -54,6 +96,13 @@
 	cursor: pointer;
 	display: none;
 }
+#menu_blendBanana:hover{
+	transform:scale(1.2);
+	-ms-transform:scale(1.2); /* IE 9 */
+	-moz-transform:scale(1.2); /* Firefox */
+	-webkit-transform:scale(1.2); /* Safari and Chrome */
+	-o-transform:scale(1.2); /* Opera */
+}
 #menu_blendBananaOrange{
 	position: absolute; 
 	top: 75%; 
@@ -61,6 +110,13 @@
 	z-index: 4; 
 	cursor: pointer;
 	display: none;
+}
+#menu_blendBananaOrange:hover{
+	transform:scale(1.2);
+	-ms-transform:scale(1.2); /* IE 9 */
+	-moz-transform:scale(1.2); /* Firefox */
+	-webkit-transform:scale(1.2); /* Safari and Chrome */
+	-o-transform:scale(1.2); /* Opera */
 }
 #menu_pourOrange{
 	position: absolute; 
@@ -70,6 +126,13 @@
 	cursor: pointer;
 	display: none;
 }
+#menu_pourOrange:hover{
+	transform:scale(1.2);
+	-ms-transform:scale(1.2); /* IE 9 */
+	-moz-transform:scale(1.2); /* Firefox */
+	-webkit-transform:scale(1.2); /* Safari and Chrome */
+	-o-transform:scale(1.2); /* Opera */
+}
 #menu_showOrange{
 	position: absolute; 
 	top: 75%; 
@@ -77,6 +140,13 @@
 	z-index: 4; 
 	cursor: pointer;
 	display: none;
+}
+#menu_showOrange:hover{
+	transform:scale(1.2);
+	-ms-transform:scale(1.2); /* IE 9 */
+	-moz-transform:scale(1.2); /* Firefox */
+	-webkit-transform:scale(1.2); /* Safari and Chrome */
+	-o-transform:scale(1.2); /* Opera */
 }
 #menu_pourOrangeBanana{
 	position: absolute; 
@@ -86,6 +156,13 @@
 	cursor: pointer;
 	display: none;
 }
+#menu_pourOrangeBanana:hover{
+	transform:scale(1.2);
+	-ms-transform:scale(1.2); /* IE 9 */
+	-moz-transform:scale(1.2); /* Firefox */
+	-webkit-transform:scale(1.2); /* Safari and Chrome */
+	-o-transform:scale(1.2); /* Opera */
+}
 #menu_showOrangeBanana{
 	position: absolute; 
 	top: 75%; 
@@ -93,6 +170,13 @@
 	z-index: 4; 
 	cursor: pointer;
 	display: none;
+}
+#menu_showOrangeBanana:hover{
+	transform:scale(1.2);
+	-ms-transform:scale(1.2); /* IE 9 */
+	-moz-transform:scale(1.2); /* Firefox */
+	-webkit-transform:scale(1.2); /* Safari and Chrome */
+	-o-transform:scale(1.2); /* Opera */
 }
 #menu_pourBanana{
 	position: absolute; 
@@ -102,6 +186,13 @@
 	cursor: pointer;
 	display: none;
 }
+#menu_pourBanana:hover{
+	transform:scale(1.2);
+	-ms-transform:scale(1.2); /* IE 9 */
+	-moz-transform:scale(1.2); /* Firefox */
+	-webkit-transform:scale(1.2); /* Safari and Chrome */
+	-o-transform:scale(1.2); /* Opera */
+}
 #menu_showBanana{
 	position: absolute; 
 	top: 75%; 
@@ -110,6 +201,13 @@
 	cursor: pointer;
 	display: none;
 }
+#menu_showBanana:hover{
+	transform:scale(1.2);
+	-ms-transform:scale(1.2); /* IE 9 */
+	-moz-transform:scale(1.2); /* Firefox */
+	-webkit-transform:scale(1.2); /* Safari and Chrome */
+	-o-transform:scale(1.2); /* Opera */
+}
 #menu_reset{
 	position: absolute; 
 	top: 40%; 
@@ -117,4 +215,11 @@
 	z-index: 4; 
 	cursor: pointer;
 	display: none;
+}
+#menu_reset:hover{
+	transform:scale(1.2);
+	-ms-transform:scale(1.2); /* IE 9 */
+	-moz-transform:scale(1.2); /* Firefox */
+	-webkit-transform:scale(1.2); /* Safari and Chrome */
+	-o-transform:scale(1.2); /* Opera */
 }
