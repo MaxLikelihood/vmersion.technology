@@ -5,10 +5,12 @@ document.createElement('video');document.createElement('audio');document.createE
 	    	this.play();
 		});
 		window.video_player = videojs('blender');
+    window.text_glow = 0;
 		// track state of interaction
 		window.interaction_state = "idle";
     document.getElementById('menu_Start').style.display='block';
 		setTimeout(callback, 1000);
+    setTimeout(animation, 200);
   	}
 	function play(){
 		video_player.play();
@@ -19,6 +21,19 @@ document.createElement('video');document.createElement('audio');document.createE
 	function stop(){
 		video_player.currentTime(0);
 	}
+  function animation(){
+   var menu_text = document.getElementsByName("menu_text");
+   var i;
+   for (i = 0; i < menu_text.length; i++)
+   {
+     menu_text[i].style.textShadow = "0 0 " + window.text_glow + "px #FFF";
+   }
+   window.text_glow +=1;
+   if (window.text_glow > 4){
+     window.text_glow = 0;
+   }
+   setTimeout(animation, 200);
+ }
   	function callback(){
   		var time = video_player.currentTime();
   		var text = document.getElementById('annotation');
