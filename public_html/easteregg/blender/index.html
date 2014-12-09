@@ -1031,6 +1031,10 @@ a.PIN_1418138337517_embed_grid_ft span.PIN_1418138337517_embed_grid_ft_logo { ve
       ga('send', 'pageview');
 
     </script>
+    <script>
+      $(".iframe").colorbox({onComplete:function()
+      {_gaq.push(['_trackPageview', $(this).attr('href')]);}}); 
+    </script> 
 </head>
 
 <body data-twttr-rendered="true" id="dummybodyid">
