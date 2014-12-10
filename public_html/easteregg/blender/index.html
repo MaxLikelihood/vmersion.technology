@@ -1018,6 +1018,8 @@ a.PIN_1418138337517_embed_grid_ft span.PIN_1418138337517_embed_grid_ft_logo { ve
     <script type="text/javascript">
     window.onload = function(e){
         $(".iframe").colorbox({iframe:true, width:"415px", height:"765px"});
+        $(".iframe").colorbox({onComplete:function()
+        {_gaq.push(['_trackPageview', $(this).attr('href')]);}}); 
         $('#add-to-cart').on('click', function() {
           ga('send', 'event', 'button', 'click', 'try interactive video');
         });
@@ -1035,8 +1037,18 @@ a.PIN_1418138337517_embed_grid_ft span.PIN_1418138337517_embed_grid_ft_logo { ve
 
     </script>
     <script>
-      $(".iframe").colorbox({onComplete:function()
-      {_gaq.push(['_trackPageview', $(this).attr('href')]);}}); 
+      /**
+      * Function that tracks a click on an outbound link in Google Analytics.
+      * This function takes a valid URL string as an argument, and uses that URL string
+      * as the event label.
+      */
+      var trackOutboundLink = function(url) {
+         ga('send', 'event', 'outbound', 'click', url, {'hitCallback':
+           function () {
+           document.location = url;
+           }
+         });
+      }
     </script> 
 </head>
 
