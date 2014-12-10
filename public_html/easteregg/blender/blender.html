@@ -65,11 +65,11 @@
     </div> 
   </div>
   <div id = 'menu_addFruit' class = "dropdown-menu" aria-labelledby = "dropdownMenu">
-    <div id = 'switch' style = "color:white; opacity:0.9;" onclick="empty_addBanana()">
+    <div id = 'switch' style = "color:white; opacity:0.9;" onclick="ga('send', 'event', 'interaction', 'click', 'menu empty add banana'); empty_addBanana();">
         <i class="fa fa-hand-o-left fa-2x" ></i><span name = 'menu_text'><b>Add Banana</b></span>
     </div>
     <br>
-    <div id = 'switch' style = "color:white; opacity:0.9;" onclick="empty_addOrange()">
+    <div id = 'switch' style = "color:white; opacity:0.9;" onclick="ga('send', 'event', 'interaction', 'click', 'menu empty add orange'); empty_addOrange();">
         <i class="fa fa-hand-o-left fa-2x" ></i><span name = 'menu_text'><b>Add Orange</b></span>
     </div>
   </div>
