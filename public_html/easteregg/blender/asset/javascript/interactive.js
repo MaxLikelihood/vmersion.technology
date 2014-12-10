@@ -11,9 +11,6 @@ document.createElement('video');document.createElement('audio');document.createE
     document.getElementById('menu_Start').style.display='block';
 		setTimeout(callback, 1000);
     setTimeout(animation, 200);
-    $('#menu_Start').on('click', function() {
-      ga('send', 'event', 'button', 'click', 'menu start');
-    });
   	}
 	function play(){
 		video_player.play();

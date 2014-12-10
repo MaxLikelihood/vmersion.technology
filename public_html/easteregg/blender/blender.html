@@ -59,7 +59,7 @@
   <button type="button" onclick="blend_BananaOrange()">Blend Orange added to Banana</button> 
   </div>
   <!-- Interactive Menu -->
-  <div id = 'menu_Start' class = "dropdown-menu" aria-labelledby = "dropdownMenu" onclick="start()">
+  <div id = 'menu_Start' class = "dropdown-menu" aria-labelledby = "dropdownMenu" onclick="ga('send', 'event', 'interaction', 'click', 'menu start'); start();">
     <div id = 'switch' style = "color:white; opacity:0.7;">
         <i class="fa fa-gears fa-2x" ></i><span name = 'menu_text'><b>Start</b></span>
     </div> 
